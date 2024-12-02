@@ -1,0 +1,60 @@
+.features {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .features h2 {
+    font-size: 24px;
+    color: #000080;
+  }
+  
+  .features h3 {
+    font-size: 20px;
+    color: #000080;
+    margin-bottom: 30px;
+  }
+  
+  .features-list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .feature-item {
+    background: linear-gradient(to bottom, #A4F0F0, #FFFF);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+    transition: transform 0.3s ease;
+  }
+
+  .feature-item:hover {
+    transform: translateY(-5px) scale(1.05);
+  }
+  
+  .feature-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
