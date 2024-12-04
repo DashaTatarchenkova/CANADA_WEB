@@ -4,7 +4,7 @@ import fileSystemImg from "../images/FS.png";
 import diskInfoImg from "../images/info.png";
 import diskImageImg from "../images/harddisk.png";
 
-const Features = () => {
+function Features () {
   const features = [
     {
       title: "Поддержка различных файловых систем",

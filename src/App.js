@@ -1,35 +1,39 @@
-import React from "react";
-//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Header from "./components/Header";
 import Features from "./components/Features";
-import Footer from "./components/Footer";
 import Feedback from "./components/Feedback";
-//import Documentation from "./pages/Documentation";
-//import Login from "./pages/Login";
-import "./App.css";
+import Footer from "./components/Footer";
+import Documentation from "./pages/Documentation";
+import Login from "./pages/Login";
 
-const App = () => {
+function App () {
+  const [currentPage, setCurrentPage] = useState("home");
+  const navigate = useNavigate();
+
+  const navigateTo = (page) => {
+    setCurrentPage(page);
+    navigate(`/${page}`); 
+  };
+
   return (
+    <div>
+      <Header currentPage={currentPage} onNavigate={navigateTo} />
 
-    <div className="app">
-      <Header />
-      <Features />
-      <Feedback />
-      <Footer />
+      {currentPage === "home" && (
+        <>
+          <Features />
+          <Feedback />
+          <Footer></Footer>
+        </>
+      )}
+
+      <Routes>
+        <Route path="/documentation" element={<Documentation />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </div>
   );
-}
-/*
-   <Router>
-      <div className="app">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Features />} />
-          <Route path="/documentation" element={<Documentation />} />
-          <Route path="/login" element={<Login />} />
-       </Routes>
-      </div>
-    </Router> 
-  );
-}*/
+};
+
 export default App;

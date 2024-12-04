@@ -27,19 +27,20 @@
   color: #FFFF;
 }
 
-.nav a {
-  margin-left: 30px;
-  text-decoration: none;
+.nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
   font-size: 16px;
-  color: #FFFF;
-  transition: color 0.3s, transform 0.3s;
 }
 
-.nav a:hover {
-  text-decoration: underline;
-  color: #003366;
-  transform: scale(1.1);
+.nav button.active {
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
 }
+
 
 .header-content {
   display: flex;
