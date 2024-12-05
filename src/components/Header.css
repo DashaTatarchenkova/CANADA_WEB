@@ -1,46 +1,7 @@
 .header {
-  background: linear-gradient(to right bottom, #66FFFF, #96CFEE);
+  background: linear-gradient(to right, #A4F0F0, #96CFEE);
   padding: 20px;
 }
-
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
-  animation: fadeIn 1s ease-in-out;
-}
-
-.logo {
-  width: 50px;
-  height: auto;
-}
-
-.project-name {
-  font-size: 24px;
-  font-weight: bold;
-  color: #FFFF;
-}
-
-.nav button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px 16px;
-  font-size: 16px;
-}
-
-.nav button.active {
-  background-color: #007bff;
-  color: white;
-  border-radius: 4px;
-}
-
 
 .header-content {
   display: flex;

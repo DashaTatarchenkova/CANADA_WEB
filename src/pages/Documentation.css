@@ -1,16 +1,30 @@
 .documentation {
     padding: 40px;
-    text-align: center;
   }
   
-  .documentation h1 {
+  .documentation h1, h2{
     font-size: 32px;
     color: #003366;
     margin-bottom: 20px;
+    text-align: center;
+    
   }
-  
+  .documentation h3 {
+    font-size: 20px;
+    color: #333333;
+    color: #003366;
+  }
   .documentation p {
     font-size: 18px;
     color: #333333;
   }
+
+  .documentation ol {
+    font-size: 18px;
+    color: #333333;
+  }
   
+  .documentation a {
+    font-size: 18px;
+    color: #333333;
+  }

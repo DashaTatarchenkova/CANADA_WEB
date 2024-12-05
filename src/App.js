@@ -6,6 +6,7 @@ import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 import Documentation from "./pages/Documentation";
 import Login from "./pages/Login";
+import Navigation from "./components/Navigation";
 
 function App () {
   const [currentPage, setCurrentPage] = useState("home");
@@ -18,13 +19,14 @@ function App () {
 
   return (
     <div>
-      <Header currentPage={currentPage} onNavigate={navigateTo} />
+      <Navigation currentPage={currentPage} onNavigate={navigateTo} />
 
       {currentPage === "home" && (
         <>
+          <Header />
           <Features />
           <Feedback />
-          <Footer></Footer>
+          <Footer />
         </>
       )}
 
