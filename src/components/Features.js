@@ -25,13 +25,21 @@ function Features () {
       <h2>CANADA Project</h2>
       <h3>Основные возможности</h3>
       <div className="features-list">
-        {features.map((feature, index) => (
-          <div key={index} className="feature-item">
-            <img src={feature.img} alt={feature.title} className="feature-image" />
-            <p>{feature.title}</p>
-          </div>
-        ))}
-      </div>
+  {features.map((feature, index) => (
+    <div
+      key={index}
+      className={`feature-item ${
+        feature.title === "Просмотр информации о конкретном диске"
+          ? "highlighted-item"
+          : ""
+      }`}
+    >
+      <img src={feature.img} alt={feature.title} className="feature-image" />
+      <p>{feature.title}</p>
+    </div>
+  ))}
+</div>
+
     </section>
   );
 };

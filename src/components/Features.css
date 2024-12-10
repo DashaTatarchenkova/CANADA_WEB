@@ -19,6 +19,7 @@
     justify-content: center;
     gap: 80px;
     animation: fadeIn 1s ease-in-out;
+    position: relative;
   }
   
   .feature-item {
@@ -32,16 +33,24 @@
     transition: transform 0.3s ease;
   }
 
-  .feature-item:hover {
-    transform: translateY(-5px) scale(1.05);
+  .feature-item:not(.highlighted-item) {
+    margin-top: 30px; 
   }
-  
+
+  .feature-item.highlighted-item {
+    transform: translateY(-20px); 
+    z-index: 1; 
+  }
+
+  .feature-item:hover {
+    transform: translateY(-5px) scale(1.05); /* Добавляем эффект при наведении */
+  }
   .feature-image {
     width: 80px;
     height: 80px;
     margin-bottom: 15px;
   }
-  
+
   .feature-item p {
     margin-top: 10px;
     font-size: 16px;

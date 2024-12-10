@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Header.css";
 import comp from "../images/comp.png";
 
-const Header = ({ currentPage, onNavigate }) => {
+function Header ()  {
   return (
     <header className="header">
       <div className="header-content">

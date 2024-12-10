@@ -1,7 +1,7 @@
 import React from "react";
 import "./Feedback.css";
 
-const Feedback = () => {
+function Feedback () {
   return (
     <section className="feedback">
       <h3>Оставьте отзыв</h3>

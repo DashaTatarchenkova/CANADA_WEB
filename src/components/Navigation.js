@@ -4,7 +4,7 @@ import "./Navigation.css";
 import logo from "../images/logo.png";
 
 
-const Navigation = ({ currentPage, onNavigate }) => {
+function Navigation ({ currentPage, onNavigate }){
   return (
       <div className="Navigate">
           <div className="header-top">
