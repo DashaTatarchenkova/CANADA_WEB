@@ -81,3 +81,14 @@
 .switch-link:hover {
   color: #5757a6;
 }
+
+.login-form .input-error {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.login-form .input-success {
+  border: 2px solid green;
+  border-radius: 5px;
+}
+

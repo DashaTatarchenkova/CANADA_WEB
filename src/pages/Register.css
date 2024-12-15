@@ -81,3 +81,31 @@
 .switch-link:hover {
   color: #5757a6;
 }
+
+.register-form .input-error {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.register-form .input-success {
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.confirmation .form-button {
+  width: 100%; 
+}
+
+.confirmation .form-button:last-child {
+  background-color: #007bff; 
+}
+
+.confirmation .form-button:last-child:hover {
+  background-color: #003366; 
+}

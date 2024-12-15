@@ -32,10 +32,13 @@
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px;
   }
   
   .feedback button:hover {
     background: #0056b3;
     color: #FFFF;
   }
-  
+  .error__message {
+    color: red;
+  }
