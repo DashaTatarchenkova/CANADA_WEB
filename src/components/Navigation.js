@@ -17,19 +17,19 @@ function Navigation({ currentPage, onNavigate }) {
               onClick={() => onNavigate("/")}
               className={currentPage === "/" ? "active" : ""}
             >
-              Главная
+              ГЛАВНАЯ
             </button>
             <button
               onClick={() => onNavigate("/documentation")}
               className={currentPage === "/documentation" ? "active" : ""}
             >
-              Документация
+              ДОКУМЕНТАЦИЯ
             </button>
             <button
               onClick={() => onNavigate("/login")}
               className={currentPage === "/login" ? "active" : ""}
             >
-              Вход
+              ВХОД
             </button>
           </nav>
         </div>

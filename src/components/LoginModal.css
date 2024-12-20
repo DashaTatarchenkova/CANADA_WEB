@@ -56,9 +56,10 @@
   }
   
   .form-container.show-register .form-login {
-    transform: translateY(-100%);}
+    transform: translateY(-100%);
+  }
   
   .form-container.show-register .form-register {
-    transform: translateY(0); 
+    transform: translateY(0);
   }
   

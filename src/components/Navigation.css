@@ -1,34 +1,38 @@
 .Navigate{
     background: linear-gradient(to right, #A4F0F0, #96CFEE);
     padding: 20px;
-  }  
-
-  .header-top {
+  }
+*{
+  transition-timing-function: ease;
+  transition-duration: 1s;
+  }
+  .header-top, .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .header-logo {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     animation: fadeIn 1s ease-in-out;
   }
-  
+
   .logo {
     width: 50px;
     height: auto;
   }
-  
+
   .project-name {
+    font-family: 'Helvetica';
     font-size: 24px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #FFFF;
   }
 
 .nav button {
-    justify-content: space-between;
+    text-align: center;
     background: none;
     border: none;
     cursor: pointer;
@@ -36,7 +40,7 @@
     font-size: 16px;
     animation: fadeIn 1s ease-in-out;
   }
-  
+
   .nav button.active {
     background-color: #007bff;
     color: white;
@@ -54,4 +58,61 @@
       transform: scale(1);
     }
   }
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .header-logo{
+    width: 250px;
+  }
+  .header-logo img{
+    width: 50px;
+  }
+  .project-name{
+    font-size: 2rem;
+  }
+  .nav button{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px){
+  * {
+      transition-timing-function: ease;
+      transition-duration: 1s;
+  }
+  .header-logo{
+    width: 300px;
+  }
+  .header-logo img{
+    width: 70px;
+  }
+  .project-name{
+    font-size: 2.1rem;
+  }
+  .nav button{
+    font-size: 1.3rem;
+    margin: auto 5px;
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (min-width: 2560px), (min-height: 1450px){
+  *{
+  transition-timing-function: ease;
+  transition-duration: 1s;
+  }
+  .header-logo{
+    width: 500px;
+  }
+  .header-logo img{
+    width: 120px;
+  }
+  .project-name{
+    font-size: 3.2rem;
+  }
+  .nav button{
+    font-size: 2rem;
+    margin: auto 5px;
+    padding: 10px 25px;
+  }
+}
   
